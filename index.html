@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portfolio of my coding projects and skills.">
+  <title>Team Alice | Code Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="img/LadySiheadthingy.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="background-music" autoplay loop aria-hidden="true">
+    <source src="sounds/Arknights%20Endfield%20OST%20-%20Official%20Site%20Theme.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <h1>Wonder1and</h1>
+    <p>Developer | Coder | Designer</p>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Hello! I'm a Grade 12 STEM student learning how to code under and an OTJ system.
+          A newbie at coding and understanding the basics of HTML, CSS, and JavaScript.
+        </p>
+        <img
+          class="about-image"
+          src="img/Lady%20Si%20(Endfield).jpeg"
+          alt="Illustration of Lady Si from Arknights: Endfield"
+          width="551"
+          height="896"
+        >
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skill/s</h2>
+      <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Portfolio Website
+          </h3>
+          <p>A simple portfolio website to showcase my coding projects and skills.</p>
+          <p><a href="https://github.com/">View project on GitHub</a></p>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>A short description of another project, its purpose, and the technology you used.</p>
+          <p><a href="https://github.com/">View project on GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <p>Location: Talos II, Lady Si's Painting</p>
+        <p>Email: <a href="mailto:teamaliceofficial@gmail.com">teamaliceofficial@gmail.com</a> </p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/">LinkedIn</a></p>
+        <p>Github: <a href="https://github.com/">GitHub</a></p>
+        <p>Vercel: <a href="https://vercel.com/">Team Alice</a></p>
+      </p>
+    </section>
+    <section><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click for a Suprise ^^</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Team Alice
+    </p>
+  </footer>
+  <script>
+    const backgroundMusic = document.getElementById("background-music");
+
+    function updateBackgroundMusic() {
+      if (document.hidden || !document.hasFocus()) {
+        backgroundMusic.pause();
+        return;
+      }
+
+      const playback = backgroundMusic.play();
+      if (playback) {
+        playback.catch((error) => {
+          if (error.name !== "NotAllowedError") {
+            console.error("Background music could not be played:", error);
+          }
+        });
+      }
+    }
+
+    document.addEventListener("visibilitychange", updateBackgroundMusic);
+    document.addEventListener("pointerdown", updateBackgroundMusic);
+    document.addEventListener("keydown", updateBackgroundMusic);
+    window.addEventListener("focus", updateBackgroundMusic);
+    window.addEventListener("blur", updateBackgroundMusic);
+    updateBackgroundMusic();
+  </script>
+</body>
+</html>
