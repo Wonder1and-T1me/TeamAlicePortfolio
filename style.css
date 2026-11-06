@@ -41,15 +41,13 @@ header {
   background:
     url("img/LadySi.jpg") center center / cover no-repeat;
   border: 1px solid var(--accent);
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .hero-intro,
 nav {
-  border: 1px solid var(--accent);
+  border: none;
   border-radius: 14px;
-  background: rgba(16, 19, 22, 0.72);
-  backdrop-filter: blur(5px);
 }
 
 .hero-intro {
@@ -74,7 +72,7 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  padding: 10px;
+  padding: 50px;
 }
 
 nav a {
@@ -157,7 +155,7 @@ section h2 {
   border-radius: 14px;
   background: var(--surface);
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 50% 40%;
   box-shadow:0 0 0 1px var(--accent);
 }
 
