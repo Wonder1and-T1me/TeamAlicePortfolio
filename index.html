@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A portfolio of my coding projects and skills.">
   <title>Team Alice | Code Portfolio</title>
-  <link rel="icon" type="image/jpeg" href="img/LadySiheadthingy.jpg">
+  <link rel="icon" type="image/png" href="./img/Si.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <audio id="background-music" autoplay loop aria-hidden="true">
-    <source src="sounds/Arknights%20Endfield%20OST%20-%20Official%20Site%20Theme.mp3" type="audio/mpeg">
+    <source src="./sounds/arknightsendfieldwebsiteost.mp3" type="audio/mpeg">
   </audio>
 
   <header>
-    <h1>Wonder1and</h1>
-    <p>Developer | Coder | Designer</p>
+    <div class="hero-intro">
+      <p class="eyebrow">IT Student</p>
+      <h1>Cedric James V. Loyola</h1>
+      <p>Developer <span aria-hidden="true">/</span> Coder <span aria-hidden="true">/</span> Designer</p>
+    </div>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#tech-stack">Tech Stack</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -26,39 +30,106 @@
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
+      <h2 class="about-heading">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="7" r="4" />
+          <path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2" />
+        </svg>
+        About Me
+      </h2>
       <div class="about-content">
-        <p>
-          Hello! I'm a Grade 12 STEM student learning how to code under and an OTJ system.
-          A newbie at coding and understanding the basics of HTML, CSS, and JavaScript.
-        </p>
-        <img
-          class="about-image"
-          src="img/Lady%20Si%20(Endfield).jpeg"
-          alt="Illustration of Lady Si from Arknights: Endfield"
-          width="551"
-          height="896"
-        >
+        <div class="about-copy">
+          <h3>I'm Cedric James V. Loyola</h3>
+          <p class="about-role">IT Student <span aria-hidden="true">/</span> Developer</p>
+          <p class="about-description">
+            I'm a Grade 12 STEM student learning web development and systems programming.
+            I'm building my skills in HTML, CSS, and JavaScript while exploring how technology
+            can solve real-world problems.
+          </p>
+          <div class="about-details">
+            <p>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <rect x="3.5" y="5" width="17" height="16" rx="2" />
+                <path d="M8 3v4M16 3v4M3.5 10h17" />
+              </svg>
+              <span><strong>Age:</strong> 17</span>
+            </p>
+            <p>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+              </svg>
+              <span><strong>Education:</strong> ICSNI</span>
+            </p>
+          </div>
+          <div class="about-actions">
+            <a class="about-button about-button-primary" href="#tech-stack">Tech Stack</a>
+            <a class="about-button" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="about-photo-window">
+          <img
+            class="about-image"
+            src="./img/Si.png"
+            alt="Picture of Cedric James V. Loyola"
+            width="1448"
+            height="1086">
+        </div>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-      </ul>
+    <section id="tech-stack">
+      <h2 class="stack-heading">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+        </svg>
+        Technology &amp; Tools
+      </h2>
+      <p class="stack-intro">The technologies I use while learning and building projects.</p>
+      <div class="stack-group">
+        <h3>Web development</h3>
+        <ul class="stack-list" aria-label="Web development technologies">
+          <li><span class="stack-mark stack-mark-html" aria-hidden="true">5</span>HTML</li>
+          <li><span class="stack-mark stack-mark-css" aria-hidden="true">3</span>CSS</li>
+          <li><span class="stack-mark stack-mark-js" aria-hidden="true">JS</span>JavaScript</li>
+        </ul>
+      </div>
+      <p class="stack-note">Learning and improving with every project.</p>
+    </section>
+
+    <section id="experience">
+      <h2 class="experience-heading">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="7" width="18" height="14" rx="2" />
+          <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2" />
+        </svg>
+        Work Experience
+      </h2>
+      <p class="experience-intro">My hands-on learning and experience so far.</p>
+      <div class="experience-timeline">
+        <article class="experience-card">
+          <div class="experience-card-heading">
+            <div>
+              <h3>IT Student Trainee</h3>
+              <p class="experience-organization">On-the-Job Training (OTJ)</p>
+            </div>
+            <span class="experience-status">Student training</span>
+          </div>
+          <p class="experience-description">
+            Building practical IT and programming skills through my OTJ training, including
+            learning web development with HTML, CSS, and JavaScript.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-list">
         <article class="project-card">
-          <h3>Portfolio Website
-          </h3>
+          <h3>Portfolio Website</h3>
           <p>A simple portfolio website to showcase my coding projects and skills.</p>
-          <p><a href="https://github.com/">View project on GitHub</a></p>
+          <p><a href="https://github.com/Wonder1and-T1me/Alicia">View project on GitHub</a></p>
         </article>
         <article class="project-card">
           <h3>Project Two</h3>
@@ -70,15 +141,13 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        <p>Location: Talos II, Lady Si's Painting</p>
-        <p>Email: <a href="mailto:teamaliceofficial@gmail.com">teamaliceofficial@gmail.com</a> </p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/">LinkedIn</a></p>
-        <p>Github: <a href="https://github.com/">GitHub</a></p>
-        <p>Vercel: <a href="https://vercel.com/">Team Alice</a></p>
-      </p>
-    </section>
-    <section><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click for a Suprise ^^</a>
+      <div class="contact-list">
+        <p><span>Location</span>Talos II, Lady Si's Painting</p>
+        <p><span>Email</span><a href="mailto:teamaliceofficial@gmail.com">teamaliceofficial@gmail.com</a></p>
+        <p><span>LinkedIn</span><a href="https://www.linkedin.com/">LinkedIn</a></p>
+        <p><span>GitHub</span><a href="https://github.com/">GitHub</a></p>
+        <p><span>Vercel</span><a href="https://vercel.com/">Team Alice</a></p>
+      </div>
     </section>
   </main>
 
@@ -90,6 +159,10 @@
     const backgroundMusic = document.getElementById("background-music");
 
     function updateBackgroundMusic() {
+      if (!backgroundMusic) {
+        return;
+      }
+
       if (document.hidden || !document.hasFocus()) {
         backgroundMusic.pause();
         return;
